@@ -1,0 +1,649 @@
+
+<main>
+  <ul class='slider'>
+    <li class='item' style="background-image: url('https://cdn.mos.cms.futurecdn.net/dP3N4qnEZ4tCTCLq59iysd.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Lossless Youths"</h2>
+        <p class='description'> Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+        praesentium nisi. Id laboriosam ipsam enim.  </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('https://i.redd.it/tc0aqpv92pn21.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Estrange Bond"</h2>
+        <p class='description'> Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+        praesentium nisi. Id laboriosam ipsam enim.  </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('https://wharferj.files.wordpress.com/2015/11/bio_north.jpg')">
+      <div class='content'>
+        <h2 class='title'>"The Gate Keeper"</h2>
+        <p class='description'> Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+        praesentium nisi. Id laboriosam ipsam enim.  </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('https://images7.alphacoders.com/878/878663.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Last Trace Of Us"</h2>
+        <p class='description'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+        </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('https://theawesomer.com/photos/2017/07/simon_stalenhag_the_electric_state_6.jpg')">
+      <div class='content'>
+        <h2 class='title'>"Urban Decay"</h2>
+        <p class='description'>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore fuga voluptatum, iure corporis inventore praesentium nisi. Id laboriosam ipsam enim.
+        </p>
+        <button>Read More</button>
+      </div>
+    </li>
+    <li class='item' style="background-image: url('https://da.se/app/uploads/2015/09/simon-december1994.jpg')">
+      <div class='content'>
+        <h2 class='title'>"The Migration"</h2>
+        <p class='description'> Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Tempore fuga voluptatum, iure corporis inventore
+        praesentium nisi. Id laboriosam ipsam enim.  </p>
+        <button>Read More</button>
+      </div>
+    </li>
+  </ul>
+  <nav class='nav'>
+    <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+    <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+  </nav>
+</main>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+}
+
+.item {
+  width: 200px;
+  height: 300px;
+  list-style-type: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0 20px 30px rgba(255,255,255,0.3) inset;
+  transition: transform 0.1s, left 0.75s, top 0.75s, width 0.75s, height 0.75s;
+
+  &:nth-child(1), &:nth-child(2) {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: none;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  &:nth-child(3) { left: 50%; }
+  &:nth-child(4) { left: calc(50% + 220px); }
+  &:nth-child(5) { left: calc(50% + 440px); }
+  &:nth-child(6) { left: calc(50% + 660px); opacity: 0; }
+}
+
+.content {
+  width: min(30vw,400px);
+  position: absolute;
+  top: 50%;
+  left: 3rem;
+  transform: translateY(-50%);
+  font: 400 0.85rem helvetica,sans-serif;
+  color: white;
+  text-shadow: 0 3px 8px rgba(0,0,0,0.5);
+  opacity: 0;
+  display: none;
+
+  & .title {
+    font-family: 'arial-black';
+    text-transform: uppercase;
+  }
+
+  & .description {
+    line-height: 1.7;
+    margin: 1rem 0 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  & button {
+    width: fit-content;
+    background-color: rgba(0,0,0,0.1);
+    color: white;
+    border: 2px solid white;
+    border-radius: 0.25rem;
+    padding: 0.75rem;
+    cursor: pointer;
+  }
+}
+
+.item:nth-of-type(2) .content {
+  display: block;
+  animation: show 0.75s ease-in-out 0.3s forwards;
+}
+
+@keyframes show {
+  0% {
+    filter: blur(5px);
+    transform: translateY(calc(-50% + 75px));
+  }
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.nav {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  user-select: none;
+
+  & .btn {
+    background-color: rgba(255,255,255,0.5);
+    color: rgba(0,0,0,0.7);
+    border: 2px solid rgba(0,0,0,0.6);
+    margin: 0 0.25rem;
+    padding: 0.75rem;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(255,255,255,0.3);
+    }
+  }
+}
+
+@media (width > 650px) and (width < 900px) {
+  .content {
+    & .title        { font-size: 1rem; }
+    & .description  { font-size: 0.7rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 160px;
+    height: 270px;
+
+    &:nth-child(3) { left: 50%; }
+    &:nth-child(4) { left: calc(50% + 170px); }
+    &:nth-child(5) { left: calc(50% + 340px); }
+    &:nth-child(6) { left: calc(50% + 510px); opacity: 0; }
+  }
+}
+
+@media (width < 650px) {
+  .content {
+    & .title        { font-size: 0.9rem; }
+    & .description  { font-size: 0.65rem; }
+    & button        { font-size: 0.7rem; }
+  }
+  .item {
+    width: 130px;
+    height: 220px;
+
+    &:nth-child(3) { left: 50%; }
+    &:nth-child(4) { left: calc(50% + 140px); }
+    &:nth-child(5) { left: calc(50% + 280px); }
+    &:nth-child(6) { left: calc(50% + 420px); opacity: 0; }
+  }
+}
+const slider = document.querySelector('.slider');
+
+function activate(e) {
+  const items = document.querySelectorAll('.item');
+  e.target.matches('.next') && slider.append(items[0])
+  e.target.matches('.prev') && slider.prepend(items[items.length-1]);
+}
+
+document.addEventListener('click',activate,false);
+
+now listen careful like very careful make it precise af, integrate this code into the code i'ma abt to give ou please careful do it on the code i'ma abt to give to you.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="main.html">
+                <img src="logo.png" alt="Logo" class="logo" style="margin-left: 20px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <h1 class="nav-link" id="home">Home</h1>
+                    </li>
+                    <li class="nav-item">
+                        <h1 class="nav-link" id="aboutus">About Us</h1>
+                    </li>
+                    <li class="nav-item">
+                        <h1 class="nav-link" id="programs">Programs</h1>
+                    </li>
+                    <li class="nav-item">
+                        <h1 class="nav-link" id="chapters">Chapters</h1>
+                    </li>
+                    <li class="nav-item">
+                        <h1 class="nav-link" id="collaborate">Collaborate</h1>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-primary" id="contribute">Contribute</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container-fluid p-0">
+        <div class="hero-section">
+            <div class="hero-image"></div>
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1 class="hero-heading">
+                    Spreading Art and<br>Saving the Planet
+                </h1>
+                <p class="hero-description">Hello! So glad you could stop by! We're a youth-run 501(c)3 nonprofit that collects, recycles, and donates school supplies!</p>
+            </div>
+        </div>    
+        <div class="missions-div">
+            <div class="onyxContent">
+                <h3>Our <strong>Missions</strong></h3>
+                <hr class="styled-hr">
+            </div>     
+        </div>      
+    </main>
+</body>
+</html>
+/* Reset and Base Styles */
+@import url("https://fonts.cdnfonts.com/css/apercu");
+* {
+  box-sizing: border-box;
+  font-family: apercu;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0;
+    color: #333333;
+}
+
+p {
+    color: #333333;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+    z-index: 10;
+}
+
+.logo {
+    width: 150px;
+}
+
+.nav-link {
+    font-size: 19px;
+    color: #003366 !important;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.btn-primary {
+    font-size: 19px;
+    border-radius: 50px;
+    margin-left: 30px;
+    padding: 8px 16px;
+    border: none;
+    background-color: #003366;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #001f4d;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    margin-top: 178px;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('hero.jpg') center center/cover no-repeat;
+    filter: blur(1px);
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 3;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Heading and Line Animations */
+.hero-heading {
+    position: relative;
+    font-size: 80px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 10px 20px;
+    line-height: 1.2;
+}
+
+.hero-heading::before,
+.hero-heading::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: white;
+    width: 0;
+    top: calc(50% + 10px); /* Adds margin between the text and the lines */
+    transform: translateY(-50%);
+    transition: width 1s ease;
+}
+
+.hero-heading::before {
+    left: -100px; /* Adjusted distance for the left line */
+    animation: animateLeftLine 2s forwards;
+}
+
+.hero-heading::after {
+    left: calc(100% + 20px); /* Start the right line on the right of the text */
+    animation: animateRightLine 2s forwards 2s; /* Delay for the right line */
+}
+
+@keyframes animateLeftLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100px;
+    }
+}
+
+@keyframes animateRightLine {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100px;
+        left: calc(100% + 20px); /* Ensure the right line moves from left to right */
+    }
+}
+
+.hero-description {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+    color: #f0f0f0;
+    margin-top: 20px;
+}
+
+/* Improved Responsiveness */
+@media (max-width: 768px) {
+    .hero-section {
+        height: 450px;
+        margin-top: 120px;
+    }
+
+    .hero-heading {
+        font-size: 50px;
+    }
+
+    .hero-heading::before,
+    .hero-heading::after {
+        width: 30px;
+        left: -40px;
+        right: -40px;
+    }
+
+    .hero-description {
+        font-size: 16px;
+    }
+
+    .navbar-brand {
+        margin-left: 10px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .btn-primary {
+        font-size: 16px;
+        margin-left: 15px;
+    }
+}
+
+.onyxContent {
+    display: flex;
+    min-height: 100vh;
+    max-width: 90%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    color: #0d0d0d;
+    font-size: 3.4em;
+    margin-top: 0;
+    padding: 0;
+    margin-top: -750px;
+    margin-left: -400px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    h3 {
+        font-size: 2.8em;
+    }
+}
+
+@media (max-width: 992px) {
+    h3 {
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 576px) {
+    h3 {
+        font-size: 1.8em;
+    }
+}
+.styled-hr {
+    border: none;
+    height: 2px;
+    width: 900px;  /* Adjust width as necessary */
+    background-color: #000000; /* Black color */
+    margin: 10px auto 30px auto; /* Adds spacing around the hr */
+    margin-left: 480px;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .styled-hr {
+        width: 60px;  /* Reduce the width on smaller screens */
+    }
+}
+
+@media (max-width: 576px) {
+    .styled-hr {
+        width: 50px;  /* Further reduce the width on very small screens */
+    }
+}
+
+strong {
+    position: relative;
+}
+
+/* strong::before {
+    background: linear-gradient(45deg, #b600ff 0%, #ff006e 50%, #ff97f7 100%);
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 60%;
+    left: 0;
+    bottom: 0;
+    transform: rotate(0deg);
+    animation: 0.8s highlight 0.8s 1 normal forwards;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: blur(16px);
+    z-index: -1;
+}
+
+strong::after {
+    background: linear-gradient(45deg, #b600ff 0%, #ff006e 50%, #ff97f7 100%);
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 7%;
+    left: 0;
+    bottom: 7%;
+    transform: rotate(0deg); 
+    animation: 0.8s highlight 0.8s 1 normal forwards;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: blur(0px) saturate(200%);
+    mix-blend-mode: plus-lighter;
+    border-radius: 7px;
+    z-index: 1;
+} */
+
+strong::before {
+    background: linear-gradient(
+      45deg,
+      hsla(276, 70%, 70%, 1) 0%,  /* Softer purple */
+      hsla(320, 70%, 70%, 1) 50%, /* Softer magenta */
+      hsla(340, 70%, 80%, 1) 100% /* Softer pink */
+    );
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 68%;
+    left: -2px;
+    bottom: 0;
+    transform: rotate(0deg);
+    animation: 0.8s highlight 0.8s 1 normal forwards;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: blur(10px);  /* Softer blur for less neon effect */
+    z-index: -1;
+  }
+  
+strong::after {
+    background: linear-gradient(
+      45deg,
+      hsla(276, 70%, 70%, 1) 0%,  /* Softer purple */
+      hsla(320, 70%, 70%, 1) 50%, /* Softer magenta */
+      hsla(340, 70%, 80%, 1) 100% /* Softer pink */
+    );
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 7%;
+    left: -2px;
+    bottom: 7%;
+    transform: rotate(0deg);
+    animation: 0.8s highlight 0.8s 1 normal forwards;
+    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+    filter: blur(3px);  /* Slight blur */
+    mix-blend-mode: plus-lighter;
+    border-radius: 7px;
+    z-index: 1;
+  }
+  
+
+@keyframes highlight {
+    from {
+        width: 0;
+        opacity: 0;
+        border: 0;
+    }
+    to {
+        width: calc(100% + 4px);
+        opacity: 1;
+        border: 0;
+    }
+}
+document.getElementById("navToggle").addEventListener("click", function() {
+    var navbar = document.getElementById("navbar");
+    navbar.classList.toggle("active");
+});
+
+make very sure that it is perfect I want the earlier code to be integrated jus under the horizontal rule like you can make it small if you want.
