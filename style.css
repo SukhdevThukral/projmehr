@@ -232,6 +232,7 @@ h3 {
         font-size: 1.8em;
     }
 }
+
 .styled-hr {
     border: none;
     height: 2px;
@@ -308,7 +309,7 @@ strong::before {
     transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
     filter: blur(10px);  /* Softer blur for less neon effect */
     z-index: -1;
-  }
+}
   
 strong::after {
     background: linear-gradient(
@@ -330,7 +331,7 @@ strong::after {
     mix-blend-mode: plus-lighter;
     border-radius: 7px;
     z-index: 1;
-  }
+}
   
 
 @keyframes highlight {
@@ -345,6 +346,7 @@ strong::after {
         border: 0;
     }
 }
+
 .missions-grp {
   margin-left: 150px;
   margin-top: 10px;
@@ -382,6 +384,7 @@ strong::after {
 .missions-div{
   margin-left: -100px;
 }
+
 .onyxContent {
     display: flex;
     min-height: 100vh;
@@ -415,10 +418,10 @@ strong::after {
     margin: 20px 0;
     margin-left: 80px; /* Optional: add margin around the text */
 }
+
 .swiper {
     width: 45%;
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 .swiper-slide {
@@ -426,21 +429,63 @@ strong::after {
     background-size: cover;
     width: 50px;
     height: 50px;
-  }
+    margin-bottom: 70px;
+    margin-top: 50px;
+}
 
 .swiper-slide img {
     display: block;
     width: 80%;
 }
+
 .swiper-text{
     font-size: 12px;
     
 }
+
 .swiper-container{
     background-color: #73A0E1;
 }
+
 .programs{
     margin-bottom: 80px;
+    margin-left: -340px;
+    font-size: 45px;
+}
+
+.about-container{
+    background-color: #C1F1C1;
+    margin-top: -48px;
+}
+
+.styled-hr1{
+    border: none;
+    height: 2px;
+    width: 600px;  /* Adjust width as necessary */
+    background-color: #000000; /* Black color */
+    margin: 10px auto 30px auto; /* Adds spacing around the hr */
+    margin-left: 490px;
+    border-radius: 2px;
+    margin-top: -64px;
+}
+
+.programs-header{
+    margin-top: -60px;
+}
+
+.styled-hr2{
+    border: none;
+    height: 2px;
+    width: 600px;  /* Adjust width as necessary */
+    background-color: #000000; /* Black color */
+    margin: 10px auto 30px auto; /* Adds spacing around the hr */
+    margin-left: 490px;
+    border-radius: 2px;
+    margin-top: 64px;
+}
+
+.programs-ABOUT{
+    margin-top: 70px;
     margin-left: -340px;
     font-size: 45px;
 }
