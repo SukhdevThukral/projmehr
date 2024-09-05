@@ -9,6 +9,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #e0e0e0;
     color: #333333;
+    position: relative;
+    height: 100%;
     
 }
 
@@ -345,7 +347,7 @@ strong::after {
 }
 .missions-grp {
   margin-left: 150px;
-  margin-top: 50px;
+  margin-top: 10px;
   display: flex; /* Flexbox layout */
   justify-content: space-around; /* Distribute space evenly */
   align-items: center; /* Vertically center */
@@ -378,5 +380,59 @@ strong::after {
 }
 
 .missions-div{
-  margin-top: -280px;
+  margin-left: -100px;
+}
+.onyxContent {
+    display: flex;
+    min-height: 100vh;
+    max-width: 90%;
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+    flex-direction: column;
+    text-align: left; /* Aligns text to the left */
+    padding: 20px;
+    margin: 0 auto; /* Ensures the content is centered within the parent */
+}
+
+.missions-div {
+    margin-top: -100px; /* Adjust margin to give space between hero and missions */
+}
+
+.missions-grp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 36px;
+    margin-left: 65px;
+}
+
+/* Additional styling for the paragraph text */
+.onyxContent p {
+    text-align: left;
+    font-size: 23px; /* Ensure the text is left-aligned */
+    max-width: 800px; /* Optional: limit the width for better readability */
+    margin: 20px 0;
+    margin-left: 80px; /* Optional: add margin around the text */
+}
+.swiper {
+    width: 45%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+  }
+
+.swiper-slide img {
+    display: block;
+    width: 80%;
+}
+.swiper-text{
+    font-size: 12px;
+    
 }
