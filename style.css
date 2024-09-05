@@ -436,3 +436,6 @@ strong::after {
     font-size: 12px;
     
 }
+.swiper-container{
+    background-color: aqua;
+}
