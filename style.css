@@ -437,5 +437,10 @@ strong::after {
     
 }
 .swiper-container{
-    background-color: aqua;
+    background-color: #73A0E1;
+}
+.programs{
+    margin-bottom: 80px;
+    margin-left: -340px;
+    font-size: 45px;
 }
