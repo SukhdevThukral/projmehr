@@ -198,14 +198,16 @@ p {
     text-align: center;
     padding: 20px;
 }
+.focus-areas{
+    margin-top: 50px;
+    margin-left: -400px;
+}
 
 h3 {
     color: #0d0d0d;
     font-size: 3.4em;
     margin-top: 0;
     padding: 0;
-    margin-top: 50px;
-    margin-left: -400px;
     text-align: center;
 }
 
@@ -469,23 +471,44 @@ strong::after {
     margin-top: -64px;
 }
 
-.programs-header{
-    margin-top: -60px;
+.about-container {
+    background-color: #C1F1C1;
+    margin-top: 0px;
+    padding: 1px;
 }
 
-.styled-hr2{
+.styled-hr2 {
     border: none;
     height: 2px;
-    width: 600px;  /* Adjust width as necessary */
+    width: 1000px;  /* Adjust width as necessary */
     background-color: #000000; /* Black color */
     margin: 10px auto 30px auto; /* Adds spacing around the hr */
-    margin-left: 490px;
     border-radius: 2px;
-    margin-top: 64px;
+    margin-left: 500px;
 }
 
-.programs-ABOUT{
-    margin-top: 70px;
-    margin-left: -340px;
+.programs-ABOUT {
+    margin-top: 201px;
+    padding: 20px;
     font-size: 45px;
+    margin-left: -690px;
+}
+
+.about-content {
+    margin-top: -170px;
+}
+
+.bi {
+    font-size: 54px;
+    margin-left: 200px;
+    margin-top: 1000px; /* Adjust spacing as needed */
+}
+
+#changedOnyx{
+    margin-top: -700px;
+    margin-left: -180px;
+}
+
+.onyxHardCoded{
+    display: flex;
 }
