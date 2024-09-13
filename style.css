@@ -25,6 +25,10 @@ p {
     z-index: 10;
 }
 
+.navbar-nav{
+    margin-right: 50px;
+}
+
 .logo {
     width: 150px;
 }
@@ -505,10 +509,18 @@ strong::after {
 }
 
 #changedOnyx{
-    margin-top: -700px;
-    margin-left: -180px;
+    margin-top: -430px;
+    margin-left: -170px;
 }
 
 .onyxHardCoded{
     display: flex;
+}
+
+.cool{
+    margin-top: 50px;
+    margin-left: 70px;
+    border-radius: 50px;
+    width: 500px;
+
 }
