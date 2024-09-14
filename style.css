@@ -204,7 +204,7 @@ p {
 }
 .focus-areas{
     margin-top: 50px;
-    margin-left: -400px;
+    margin-left: -285px;
 }
 
 h3 {
@@ -242,10 +242,10 @@ h3 {
 .styled-hr {
     border: none;
     height: 2px;
-    width: 900px;  /* Adjust width as necessary */
+    width: 868px;  /* Adjust width as necessary */
     background-color: #000000; /* Black color */
     margin: 10px auto 30px auto; /* Adds spacing around the hr */
-    margin-left: 480px;
+    margin-left: 539px;
     border-radius: 2px;
 }
 
@@ -422,7 +422,7 @@ strong::after {
     font-size: 23px; /* Ensure the text is left-aligned */
     max-width: 800px; /* Optional: limit the width for better readability */
     margin: 20px 0;
-    margin-left: 80px; /* Optional: add margin around the text */
+    margin-left: 112px; /* Optional: add margin around the text */
 }
 
 .swiper {
@@ -455,7 +455,7 @@ strong::after {
 
 .programs{
     margin-bottom: 80px;
-    margin-left: -340px;
+    margin-left: -215px;
     font-size: 45px;
 }
 
@@ -467,10 +467,10 @@ strong::after {
 .styled-hr1{
     border: none;
     height: 2px;
-    width: 600px;  /* Adjust width as necessary */
+    width: 868px;  /* Adjust width as necessary */
     background-color: #000000; /* Black color */
     margin: 10px auto 30px auto; /* Adds spacing around the hr */
-    margin-left: 490px;
+    margin-left: 560px;
     border-radius: 2px;
     margin-top: -64px;
 }
@@ -484,18 +484,18 @@ strong::after {
 .styled-hr2 {
     border: none;
     height: 2px;
-    width: 1000px;  /* Adjust width as necessary */
+    width: 868px;  /* Adjust width as necessary */
     background-color: #000000; /* Black color */
     margin: 10px auto 30px auto; /* Adds spacing around the hr */
     border-radius: 2px;
-    margin-left: 500px;
+    margin-left: 558px;
 }
 
 .programs-ABOUT {
-    margin-top: 201px;
+    margin-top: 197px;
     padding: 20px;
     font-size: 45px;
-    margin-left: -690px;
+    margin-left: -579px;
 }
 
 .about-content {
@@ -509,8 +509,8 @@ strong::after {
 }
 
 #changedOnyx{
-    margin-top: -430px;
-    margin-left: -170px;
+    margin-top: -300px;
+    margin-left: -98px;
 }
 
 .onyxHardCoded{
@@ -518,9 +518,33 @@ strong::after {
 }
 
 .cool{
-    margin-top: 50px;
-    margin-left: 70px;
+    margin-top: 20px;
+    margin-bottom: -30px;
+    margin-left: -325px;
     border-radius: 50px;
-    width: 500px;
+    width: 640px;
+    padding: 5px;
 
+}
+
+.toocool {
+    margin-top: 20px;
+    margin-bottom: -30px;
+    margin-left: -0px;
+    border-radius: 50px;
+    width: 233px;
+    height: 435px;
+    padding: 5px;
+}   
+
+.coolImages{
+    margin-left: 380px;
+}
+
+.joinUS{
+    background-color: #FAE7CF;
+    padding: 100px;
+}
+.cardNice{
+    margin-left: 500px;
 }
