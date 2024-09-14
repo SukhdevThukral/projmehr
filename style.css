@@ -459,11 +459,6 @@ strong::after {
     font-size: 45px;
 }
 
-.about-container{
-    background-color: #C1F1C1;
-    margin-top: -48px;
-}
-
 .styled-hr1{
     border: none;
     height: 2px;
@@ -479,6 +474,7 @@ strong::after {
     background-color: #C1F1C1;
     margin-top: 0px;
     padding: 1px;
+    height: 58em;
 }
 
 .styled-hr2 {
@@ -493,13 +489,13 @@ strong::after {
 
 .programs-ABOUT {
     margin-top: 197px;
-    padding: 20px;
+    padding: 15px;
     font-size: 45px;
     margin-left: -579px;
 }
 
 .about-content {
-    margin-top: -170px;
+    margin-top: -150px;
 }
 
 .bi {
@@ -509,7 +505,7 @@ strong::after {
 }
 
 #changedOnyx{
-    margin-top: -300px;
+    margin-top: -230px;
     margin-left: -98px;
 }
 
@@ -518,22 +514,22 @@ strong::after {
 }
 
 .cool{
-    margin-top: 20px;
-    margin-bottom: -30px;
-    margin-left: -325px;
+    margin-top: 50px;
+    margin-bottom: -180px;
+    margin-left: -335px;
     border-radius: 50px;
-    width: 640px;
+    width: 840px;
+    height: 385px;
     padding: 5px;
 
 }
 
 .toocool {
-    margin-top: 20px;
-    margin-bottom: -30px;
-    margin-left: -0px;
+    margin-top: -380px;
+    margin-left: 190px;
     border-radius: 50px;
     width: 233px;
-    height: 435px;
+    height: 385px;
     padding: 5px;
 }   
 
@@ -546,5 +542,5 @@ strong::after {
     padding: 100px;
 }
 .cardNice{
-    margin-left: 500px;
+    margin-left: 350px;
 }
