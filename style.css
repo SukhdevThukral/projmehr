@@ -516,7 +516,7 @@ strong::after {
 .cool{
     margin-top: 50px;
     margin-bottom: -180px;
-    margin-left: -335px;
+    margin-left: -345px;
     border-radius: 50px;
     width: 840px;
     height: 385px;
@@ -528,7 +528,7 @@ strong::after {
     margin-top: -380px;
     margin-left: 190px;
     border-radius: 50px;
-    width: 233px;
+    width: 313px;
     height: 385px;
     padding: 5px;
 }   
